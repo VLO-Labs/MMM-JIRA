@@ -1,6 +1,6 @@
 ## MMM-JIRA
 
-## JIRA by Atlassian
+## JIRA for MagicMirror2 
 
 It's like you have JIRA tickets in front of you when you're not even awake yet, I know, it sounds horrible and it is,
 but that how the life is, cheers!
