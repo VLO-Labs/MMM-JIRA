@@ -5,25 +5,25 @@
  */
 
 .MMM-JIRA .header {
-  color: #33FFFD;               /* Header color. Default is white. */
+    color: #33FFFD; /* Header color. Default is white. */
 }
 
 .MMM-JIRA .timestamp {
-  color: #FFFFFF;               /* timestamp color. Default is white. */
+    color: #FFFFFF; /* timestamp color. Default is white. */
 }
 
 .MMM-JIRA .source {
-  color: #FFFFFF;               /* source color. Default is white. */
+    color: #FFFFFF; /* source color. Default is white. */
 }
 
 .MMM-JIRA .symbol {
-  color: #FFFFFF;               /* symbols color. Default is white. */
+    color: #FFFFFF; /* symbols color. Default is white. */
 }
 
 .MMM-JIRA .Currency {
-  color: #33FFFD;               /* Currency color. Default is white. */
+    color: #33FFFD; /* Currency color. Default is white. */
 }
 
 .MMM-JIRA .Rate {
-  color: #33FFFD;               /* Exchange color. Default is white. */
+    color: #33FFFD; /* Exchange color. Default is white. */
 }
