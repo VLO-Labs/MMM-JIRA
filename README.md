@@ -18,14 +18,21 @@ but that how the life is, cheers!
 ## Config.js entry and options
 
     {
-        module: 'MMM-JIRA',
-        position: 'top_left',                 // Best in left, center, or right regions
-        config: {
-				url: "https://saferidehealth.atlassian.net/rest/api/2/search?jql=project%3DENG&fields=summary&maxResults=10",
+			module: 'MMM-JIRA',
+			position: 'top_left',                 // Best in left, center, or right regions
+			config: {
+				url: "https://saferidehealth.atlassian.net/rest/api/2/search",
 				useHeader: false,
 				header: "Tasks in JIRA",
 				maxWidth: "300px",
-				apiToken: "API Token from JIRA",
+				apiToken: "YOUR API TOKEN",
 				username: "YOUR USERNAME",
+				assignee: "EMAIL ADDRESS OF THE ASSIGNEE",
+				statuses:[
+					'STATUSES'
+				],
+				project: "",
+				fields: "summary",
+				maxResults: 10
 			}
-    },
+		}

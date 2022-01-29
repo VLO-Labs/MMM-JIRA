@@ -34,6 +34,26 @@ Module.register("MMM-JIRA", {
 
         //  Set locale.
         this.url = this.config.url;
+        this.url += "?jql=";
+        let jql = "project='" + this.config.project + "'";
+        if (this.config.assignee !== '') {
+            jql += " AND assignee='" + this.config.assignee + "'";
+        }
+        if (this.config.statuses.length > 0) {
+            jql += " AND (";
+            let statusIterator = 0;
+            for (let statusKey in this.config.statuses) {
+                if (++statusIterator < this.config.statuses.length) {
+                    jql += "status='" + this.config.statuses[statusKey] + "' OR ";
+                } else {
+                    jql += "status='" + this.config.statuses[statusKey] + "'";
+                }
+            }
+            jql += ")";
+        }
+        this.url += encodeURIComponent(jql);
+        this.url += "&fields=" + this.config.fields;
+        this.url += "&maxResults=" + this.config.maxResults;
         this.username = this.config.username;
         this.password = this.config.apiToken;
 
